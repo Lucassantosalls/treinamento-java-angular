@@ -10,6 +10,8 @@ export class LabelInputComponent implements OnInit {
   @Input()
   label: string = '';
 
+  @Input()
+  type = 'text' || 'number' || 'password';
 
   constructor() { }
 
