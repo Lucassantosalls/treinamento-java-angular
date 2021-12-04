@@ -11,7 +11,7 @@ export class LabelInputComponent implements OnInit {
   label: string = '';
 
   @Input()
-  type = 'text' || 'number' || 'password';
+  type = 'text' || 'number' || 'password' || 'email';
 
   constructor() { }
 

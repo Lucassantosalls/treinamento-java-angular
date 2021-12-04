@@ -1,0 +1,32 @@
+<form #clientForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <h1>Cadastrar Clientes!</h1>
+
+  <div class="row">
+    <div class="col">
+      <label for="exampleInputText1" class="form-label">Nome</label>
+      <input type="text" class="form-control" [(ngModel)]="cliente.name" name="name" id="exampleInputEmail1" aria-describedby="textlHelp">  </div>
+    <div class="col">
+      <label for="exampleInputEmail1" class="form-label">E-mail</label>
+      <input type="email" [(ngModel)]="cliente.email" name="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="col">
+      <label for="exampleFormControlTextarea1" class="form-label">CPF</label>
+      <input type="text" [(ngModel)]="cliente.cpf" name="cpf" class="form-control">
+    </div>
+    <div class="col">
+      <label for="exampleFormControlTextarea1" class="form-label">Observações</label>
+      <input class="form-control" [(ngModel)]="cliente.observacoes" name="observacoes" id="exampleFormControlTextarea1" rows="3">
+    </div>
+    <div>
+      <label>ATIVO</label>
+      <input type="checkbox"name="ativo" [(ngModel)]="cliente.ativo" >
+    </div>
+  </div>
+
+  <div>
+    <app-button textoButao = 'Entrar'></app-button>
+  </div>
+
+</form>
+

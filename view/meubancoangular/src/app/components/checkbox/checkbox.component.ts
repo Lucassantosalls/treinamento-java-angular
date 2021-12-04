@@ -9,6 +9,7 @@ export class CheckboxComponent implements OnInit {
 
   @Input()
   textoCheck: string = '';
+  ativoCliente: boolean = false
   constructor() { }
 
   ngOnInit(): void {
