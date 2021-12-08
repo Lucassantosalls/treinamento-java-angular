@@ -1,0 +1,19 @@
+<h1>Cadastrar Conta!</h1>
+<hr>
+<form [formGroup]="formGroup" (ngSubmit)="enviarConta()">
+  <div class="mb-3">
+    <label >Agência</label>
+    <input class="form-control" formControlName = "agencia">
+  </div>
+  <div class="mb-3">
+    <label >Número</label>
+    <input class="form-control" formControlName = "numero">
+  </div>
+  <div class="mb-3">
+    <label >Saldo</label>
+    <input class="form-control" formControlName = "saldo">
+  </div>
+  <hr>
+  <button type="submit" [disabled]="!formGroup.valid" class="btn btn-primary">Cadastrar</button>
+</form>
+

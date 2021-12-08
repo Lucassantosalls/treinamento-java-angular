@@ -13,6 +13,7 @@
       <th scope="col">E-mail</th>
       <th scope="col">Observações</th>
       <th scope="col">Ativo</th>
+      <th scope="col">Ações</th>
     </tr>
   </thead>
   <tbody>
@@ -26,8 +27,11 @@
         <i *ngIf="cliente.ativo" class="far fa-thumbs-up"></i>
         <i *ngIf="!cliente.ativo" class="far fa-thumbs-down"></i>
       </td>
+      <td>
+        <a class="btn btn-danger btn-sm" (click)="confirmar(cliente.id)">Remover</a>
+      </td>
     </tr>
   </tbody>
 </table>
 
-<app-button textoButao = 'Cadastrar' routerLink="/cadastrar-cliente"></app-button>
+<app-button textoButao = 'Cadastrar' routerLink="/cliente/cadastrar"></app-button>

@@ -1,9 +1,9 @@
 import { ICliente } from "./cliente";
 
 export interface IConta {
-  agencia: "string",
+  agencia: string,
   cliente: ICliente,
-  id: 0,
-  numero: "string",
-  saldo: 0
+  id: number,
+  numero: string,
+  saldo: number
 }

@@ -18,6 +18,9 @@ import { ClienteComponent } from './pages/cliente/cliente.component';
 import { CadastrarClienteComponent } from './pages/cliente/cadastrar-cliente/cadastrar-cliente.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContaComponent } from './pages/conta/conta.component';
+import { CadastrarContaComponent } from './pages/conta/cadastrar-conta/cadastrar-conta.component';
+import { CadastroEdicaoClienteComponent } from './pages/cliente/cadastro-edicao-cliente/cadastro-edicao-cliente.component';
+import { TransferenciaComponent } from './pages/transferencia/transferencia.component';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { ContaComponent } from './pages/conta/conta.component';
     ButtonComponent,
     ClienteComponent,
     CadastrarClienteComponent,
-    ContaComponent
+    ContaComponent,
+    CadastrarContaComponent,
+    CadastroEdicaoClienteComponent,
+    TransferenciaComponent
   ],
   imports: [
     BrowserModule,
